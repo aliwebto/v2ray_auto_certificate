@@ -106,7 +106,7 @@ curl https://get.acme.sh | sh
 ~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
 ~/.acme.sh/acme.sh --register-account -m  "$CF_EMAIL"
 ~/.acme.sh/acme.sh --issue -d "$SUBDOMAIN_NAME.$CF_DOMAIN" --standalone
-~/.acme.sh/acme.sh --installcert -d  "$SUBDOMAIN_NAME.$CF_DOMAIN" --key-file /root/auto_v2ray_certificate/private.key --fullchain-file /root/auto_v2ray_certificate/cert.crt
+~/.acme.sh/acme.sh --installcert -d  "$SUBDOMAIN_NAME.$CF_DOMAIN" --key-file private.key --fullchain-file cert.crt
 
 read -r -p "restart x-ui? [y/N] " response
 case "$response" in
