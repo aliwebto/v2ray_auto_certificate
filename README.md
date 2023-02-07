@@ -9,6 +9,7 @@ script for create A record and get certificates with one command
 
 ### clone with git
 ```bash
+  cd ~
   git clone https://github.com/aliwebto/v2ray_auto_certificate.git
   cd v2ray_auto_certificate
   chmod u+x script.sh
